@@ -1,9 +1,7 @@
 {
-    "compilerOptions": 
-    {
+    "compilerOptions": {
         "target": "es5",
-        "lib": 
-        [
+        "lib": [
             "dom",
             "dom.iterable",
             "esnext"
@@ -20,10 +18,18 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
-        "jsx": "react-jsx"
+        "jsx": "react-jsx",
+        "typeRoots": [
+            "./node_modules/@webgpu/types",
+            "./node_modules/@types"
+        ],
     },
-    "include": 
-    [
-        "src"
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }
