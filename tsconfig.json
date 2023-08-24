@@ -1,35 +1,41 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "lib": [
+    "compilerOptions": 
+    {
+        "sourceMap": true,
+        "noEmit": true,
+        "incremental": true,
+        "target": "es6",
+        "module": "esNext",
+        "jsx": "react-jsx",
+        "lib": 
+        [
             "dom",
             "dom.iterable",
             "esnext"
         ],
-        "allowJs": true,
-        "skipLibCheck": true,
+        "moduleResolution": "node",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "noFallthroughCasesInSwitch": true,
-        "module": "esnext",
-        "moduleResolution": "node",
         "resolveJsonModule": true,
-        "isolatedModules": true,
-        "noEmit": true,
-        "jsx": "react-jsx",
-        "typeRoots": [
+        "skipLibCheck": true,
+        "strict": true,
+        "typeRoots": 
+        [
             "./node_modules/@webgpu/types",
             "./node_modules/@types"
         ],
+        "allowJs": true,
+        "isolatedModules": true,
+        "forceConsistentCasingInFileNames": true
     },
-    "include": [
+    "include": 
+    [
         "src/**/*.ts",
         "src/**/*.tsx",
         "src/**/*.d.ts"
     ],
-    "exclude": [
+    "exclude": 
+    [
         "node_modules"
     ]
 }

@@ -1,4 +1,4 @@
-import { SampleLayout } from "./components/SampleLayout";
+import { SampleLayout } from "./SampleLayout";
 
 function App() {
     return (
